@@ -1,0 +1,230 @@
+{
+  "testCase" : [ {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-Radio button check in MyApp_10_11_2020_01_20_22_2022_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='radio11']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65244}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ef23f3072be052bc628603d80ff0dea6\n*** Element info: {Using=name, value=radio11}",
+      "action" : "click",
+      "locatorEleMap" : {
+        "xpath_Ancestor" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/ancestor::*/input[@value= 'radio1']",
+        "css" : "div[id = \"radio-btn-example\"] > fieldset > label > input",
+        "xpath_Attribute" : "//input[@value='radio1']",
+        "xpath_fullXPath" : "html/body/div[1]/div[1]/fieldset/label[1]/input",
+        "xpath_Descendant" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/parent::*/descendant::input[@value= 'radio1']",
+        "xpath_Parent" : "(//div[@class='left-align']//input)[1]",
+        "xpath_Position" : "//input[position() and @value='radio1']",
+        "xpath_default" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]",
+        "xpath_child" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/parent::*/child::input[@value= 'radio1']"
+      },
+      "objectName" : "input_radioBtn1",
+      "pageName" : "MyAppPage",
+      "healedElement" : "xpath : //div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]",
+      "failedElement" : "name : radio11",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-01-Radio button check in MyApp"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-Validating personal information in Automation practice_10_11_2020_01_20_31_2031_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='emaill']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 1342c60220be837485d4cca049ae911a\n*** Element info: {Using=name, value=emaill}",
+      "action" : "enterText",
+      "locatorEleMap" : {
+        "xpath_Follows" : "//label[@for='email']/following-sibling::input[1]",
+        "xpath_Ancestor" : "//form[@id='login_form']/div[1]/div[1]/input[1]/ancestor::*/input[@class= 'is_required validate account_input form-control']",
+        "css" : "input#email",
+        "xpath_fullXPath" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]",
+        "xpath_Descendant" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/descendant::input[@class= 'is_required validate account_input form-control']",
+        "xpath_Parent" : "(//div[@class='form-group']//input)[2]",
+        "id" : "email",
+        "xpath_default" : "//form[@id='login_form']/div[1]/div[1]/input[1]",
+        "xpath_child" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/child::input[@class= 'is_required validate account_input form-control']"
+      },
+      "objectName" : "input_email",
+      "pageName" : "APSignInpage",
+      "healedElement" : "id : email",
+      "failedElement" : "name : emaill",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-01-Validating personal information in Automation practice"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-User validation in OrangeHRM web application_10_11_2020_01_21_10_2110_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='admin']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65245}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: da42b0b58ed06e1e247d542ecca99e30\n*** Element info: {Using=name, value=admin}",
+      "action" : "click",
+      "locatorEleMap" : {
+        "xpath_Ancestor" : "//a[@id='menu_admin_viewAdminModule']/b[1]/ancestor::*/b[contains(text(),'Admin')]",
+        "css" : "a#menu_admin_viewAdminModule > b",
+        "xpath_fullXPath" : "html/body/div[1]/div[2]/ul/li[1]/a/b",
+        "xpath_Descendant" : "//a[@id='menu_admin_viewAdminModule']/b[1]/parent::*/descendant::b[contains(text(),'Admin')]",
+        "xpath_Parent" : "//a[@href='/index.php/admin/viewAdminModule']//b[1]",
+        "xpath_Contains" : "//b[text()='Admin']",
+        "xpath_default" : "//a[@id='menu_admin_viewAdminModule']/b[1]",
+        "xpath_child" : "//a[@id='menu_admin_viewAdminModule']/b[1]/parent::*/child::b[contains(text(),'Admin')]"
+      },
+      "objectName" : "b_admintab",
+      "pageName" : "OrangeHRMPage",
+      "healedElement" : "xpath : //a[@id='menu_admin_viewAdminModule']/b[1]",
+      "failedElement" : "name : admin",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-01-User validation in OrangeHRM web application"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-User validation in OrangeHRM web application_10_11_2020_01_21_10_2110_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='admin']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65452}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 530ef224b61c56e33a900b28d799caef\n*** Element info: {Using=name, value=admin}",
+      "action" : "click",
+      "locatorEleMap" : {
+        "xpath_Ancestor" : "//a[@id='menu_admin_viewAdminModule']/b[1]/ancestor::*/b[contains(text(),'Admin')]",
+        "css" : "a#menu_admin_viewAdminModule > b",
+        "xpath_fullXPath" : "html/body/div[1]/div[2]/ul/li[1]/a/b",
+        "xpath_Descendant" : "//a[@id='menu_admin_viewAdminModule']/b[1]/parent::*/descendant::b[contains(text(),'Admin')]",
+        "xpath_Parent" : "//a[@href='/index.php/admin/viewAdminModule']//b[1]",
+        "xpath_Contains" : "//b[text()='Admin']",
+        "xpath_default" : "//a[@id='menu_admin_viewAdminModule']/b[1]",
+        "xpath_child" : "//a[@id='menu_admin_viewAdminModule']/b[1]/parent::*/child::b[contains(text(),'Admin')]"
+      },
+      "objectName" : "b_admintab",
+      "pageName" : "OrangeHRMPage",
+      "healedElement" : "xpath : //a[@id='menu_admin_viewAdminModule']/b[1]",
+      "failedElement" : "name : admin",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-02-User check in OrangeHRM application"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-Validating personal information in Automation practice_10_11_2020_01_20_31_2031_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='emaill']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ef35839b113def2120094c0154ba664d\n*** Element info: {Using=name, value=emaill}",
+      "action" : "enterText",
+      "locatorEleMap" : {
+        "xpath_Follows" : "//label[@for='email']/following-sibling::input[1]",
+        "xpath_Ancestor" : "//form[@id='login_form']/div[1]/div[1]/input[1]/ancestor::*/input[@class= 'is_required validate account_input form-control']",
+        "css" : "input#email",
+        "xpath_fullXPath" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]",
+        "xpath_Descendant" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/descendant::input[@class= 'is_required validate account_input form-control']",
+        "xpath_Parent" : "(//div[@class='form-group']//input)[2]",
+        "id" : "email",
+        "xpath_default" : "//form[@id='login_form']/div[1]/div[1]/input[1]",
+        "xpath_child" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/child::input[@class= 'is_required validate account_input form-control']"
+      },
+      "objectName" : "input_email",
+      "pageName" : "APSignInpage",
+      "healedElement" : "id : email",
+      "failedElement" : "name : emaill",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-02-Automation practice user validation"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-Radio button check in MyApp_10_11_2020_01_20_22_2022_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='radio11']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: d313a107ad27ade4591563dee55a63d6\n*** Element info: {Using=name, value=radio11}",
+      "action" : "click",
+      "locatorEleMap" : {
+        "xpath_Ancestor" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/ancestor::*/input[@value= 'radio1']",
+        "css" : "div[id = \"radio-btn-example\"] > fieldset > label > input",
+        "xpath_Attribute" : "//input[@value='radio1']",
+        "xpath_fullXPath" : "html/body/div[1]/div[1]/fieldset/label[1]/input",
+        "xpath_Descendant" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/parent::*/descendant::input[@value= 'radio1']",
+        "xpath_Parent" : "(//div[@class='left-align']//input)[1]",
+        "xpath_Position" : "//input[position() and @value='radio1']",
+        "xpath_default" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]",
+        "xpath_child" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/parent::*/child::input[@value= 'radio1']"
+      },
+      "objectName" : "input_radioBtn1",
+      "pageName" : "MyAppPage",
+      "healedElement" : "xpath : //div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]",
+      "failedElement" : "name : radio11",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-02-MyApp  application"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-User validation in OrangeHRM web application_10_11_2020_01_21_10_2110_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='admin']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7013209fe150845faf2816bd96449fa9\n*** Element info: {Using=name, value=admin}",
+      "action" : "click",
+      "locatorEleMap" : {
+        "xpath_Ancestor" : "//a[@id='menu_admin_viewAdminModule']/b[1]/ancestor::*/b[contains(text(),'Admin')]",
+        "css" : "a#menu_admin_viewAdminModule > b",
+        "xpath_fullXPath" : "html/body/div[1]/div[2]/ul/li[1]/a/b",
+        "xpath_Descendant" : "//a[@id='menu_admin_viewAdminModule']/b[1]/parent::*/descendant::b[contains(text(),'Admin')]",
+        "xpath_Parent" : "//a[@href='/index.php/admin/viewAdminModule']//b[1]",
+        "xpath_Contains" : "//b[text()='Admin']",
+        "xpath_default" : "//a[@id='menu_admin_viewAdminModule']/b[1]",
+        "xpath_child" : "//a[@id='menu_admin_viewAdminModule']/b[1]/parent::*/child::b[contains(text(),'Admin')]"
+      },
+      "objectName" : "b_admintab",
+      "pageName" : "OrangeHRMPage",
+      "healedElement" : "xpath : //a[@id='menu_admin_viewAdminModule']/b[1]",
+      "failedElement" : "name : admin",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-03-OrangeHRM web application validation"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-Radio button check in MyApp_10_11_2020_01_20_22_2022_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='radio11']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7cd1d18a73e29ca028b9be53f6daac89\n*** Element info: {Using=name, value=radio11}",
+      "action" : "click",
+      "locatorEleMap" : {
+        "xpath_Ancestor" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/ancestor::*/input[@value= 'radio1']",
+        "css" : "div[id = \"radio-btn-example\"] > fieldset > label > input",
+        "xpath_Attribute" : "//input[@value='radio1']",
+        "xpath_fullXPath" : "html/body/div[1]/div[1]/fieldset/label[1]/input",
+        "xpath_Descendant" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/parent::*/descendant::input[@value= 'radio1']",
+        "xpath_Parent" : "(//div[@class='left-align']//input)[1]",
+        "xpath_Position" : "//input[position() and @value='radio1']",
+        "xpath_default" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]",
+        "xpath_child" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/parent::*/child::input[@value= 'radio1']"
+      },
+      "objectName" : "input_radioBtn1",
+      "pageName" : "MyAppPage",
+      "healedElement" : "xpath : //div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]",
+      "failedElement" : "name : radio11",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-03-Self MyApp validation"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC-01-Validating personal information in Automation practice_10_11_2020_01_20_31_2031_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='emaill']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 714310bba0beb1b13e0b03b35937a4cd\n*** Element info: {Using=name, value=emaill}",
+      "action" : "enterText",
+      "locatorEleMap" : {
+        "xpath_Follows" : "//label[@for='email']/following-sibling::input[1]",
+        "xpath_Ancestor" : "//form[@id='login_form']/div[1]/div[1]/input[1]/ancestor::*/input[@class= 'is_required validate account_input form-control']",
+        "css" : "input#email",
+        "xpath_fullXPath" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]",
+        "xpath_Descendant" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/descendant::input[@class= 'is_required validate account_input form-control']",
+        "xpath_Parent" : "(//div[@class='form-group']//input)[2]",
+        "id" : "email",
+        "xpath_default" : "//form[@id='login_form']/div[1]/div[1]/input[1]",
+        "xpath_child" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/child::input[@class= 'is_required validate account_input form-control']"
+      },
+      "objectName" : "input_email",
+      "pageName" : "APSignInpage",
+      "healedElement" : "id : email",
+      "failedElement" : "name : emaill",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "TC-03-AP Validation"
+  } ],
+  "noSuchEleCount" : 9,
+  "stleTmeOutCount" : 0,
+  "netwrkErrCount" : 0,
+  "othersCount" : 0,
+  "testRunName" : "TestRun1"
+}

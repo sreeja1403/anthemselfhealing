@@ -1,0 +1,33 @@
+{
+  "testCase" : [ {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "TC001_AutomationpracticeValidation_10_11_2020_06_41_28_4128_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='emaill']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: adb0a58c51799173d66bb33f0636a506\n*** Element info: {Using=name, value=emaill}",
+      "action" : "enterText",
+      "locatorEleMap" : {
+        "xpath_Follows" : "//label[@for='email']/following-sibling::input[1]",
+        "xpath_Ancestor" : "//form[@id='login_form']/div[1]/div[1]/input[1]/ancestor::*/input[@class= 'is_required validate account_input form-control']",
+        "css" : "input#email",
+        "xpath_fullXPath" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]",
+        "xpath_Descendant" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/descendant::input[@class= 'is_required validate account_input form-control']",
+        "xpath_Parent" : "(//div[@class='form-group']//input)[2]",
+        "id" : "email",
+        "xpath_default" : "//form[@id='login_form']/div[1]/div[1]/input[1]",
+        "xpath_child" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/child::input[@class= 'is_required validate account_input form-control']"
+      },
+      "testStepFailureReason" : "NoSuchElementException",
+      "pageName" : "APSignInpage",
+      "failedElement" : "name : emaill",
+      "healedElement" : "id : email",
+      "objectName" : "input_email",
+      "healStatus" : "success"
+    } ],
+    "testCaseName" : "TC001_AutomationpracticeValidation"
+  } ],
+  "noSuchEleCount" : 1,
+  "stleTmeOutCount" : 0,
+  "netwrkErrCount" : 0,
+  "othersCount" : 0,
+  "testRunName" : "TestRun1"
+}

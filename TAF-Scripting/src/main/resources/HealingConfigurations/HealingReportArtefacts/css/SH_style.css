@@ -1,0 +1,287 @@
+    body{
+        background-color: #fff;
+    }
+    .container{
+         background-color: #f7f7f7; 
+         padding:0px;
+    }
+    .header{
+        background-color: #2a3f54; 
+        color: #fff;
+        display:flex;
+        padding:5px;
+       
+    }
+    .logo-size{
+        width:36px;
+    }
+  
+    .heading1{
+        font-size: 17px;
+    }
+    .heading2{
+        font-size: 10px;
+    }
+    .section_1{
+        margin: 20px;
+        background-color: #fff;
+        padding: 20px;
+		align:center;
+    }
+    .text_sec{
+        margin-left: 8px;
+    }
+    .logo_sec{
+        margin-top: 7px;
+        margin-left: 4px;
+    }
+    .martp_style{
+        margin-top: 10px;
+    }
+    .logo-table{
+        width: 12px;
+        margin: 10px 10px 10px 0px;
+    }
+    .logo-table0{
+        width: 12px;
+        margin: 10px 10px 10px 10px;
+    }
+    .graphicon{
+        width: 14px;
+        margin: 5px 0px 10px 5px;
+    }
+    .logo-table1{
+        width: 14px;
+        margin: 10px 10px 10px 10px;
+    }
+    .accordion_logo{
+        width: 16px;
+    }
+    .logo-tablepopup{
+        width: 16px;
+    }
+    .logo-table2{
+        width: 16px;
+        cursor: pointer;
+        margin: 10px 10px 10px 10px;
+    }
+    .legend1{
+        color:#45B39D;
+        font-size:12px;
+    }
+    .legend2{
+        color:#FB5252;
+        font-size:12px;
+    }
+
+    .list{
+        background-color: #f7f7f7; 
+        color: #fff;
+        display:flex;
+        padding:5px; 
+        margin-top: 5px;
+    }
+    .list_heading1{
+        font-size: 15px;
+        font-weight: bold;
+        color:#2a3f54;
+    }
+    .list_heading2{
+        font-size: 11px;
+        font-weight: bold;
+        color:#999999;
+    }
+    .popup_text{
+        font-size: 13px;
+        font-weight: bold;
+        color:#2a3f54;
+        padding:10px 10px 10px 0px;
+    }
+    .logo_list{
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+    .logo-popup1{
+        width: 14px;
+        margin: 10px 20px 10px 5px;
+    }
+    
+    
+
+    /***************************************
+    box style
+    ***************************************/
+
+    .box_style1{
+        background-color: #3d4f4c;
+        display: inline-block;
+        padding: 15px;
+        width:250px;
+    }
+    .box_style2{
+        background-color: #647587;
+        display: inline-block;
+        padding: 15px;
+        width:250px;
+    }
+    .box_style3{
+        background-color: #ab8465;
+        display: inline-block;
+        padding: 15px;
+        width:250px;
+    }
+    .box_style4{
+        background-color: #0068d0;
+        display: inline-block;
+        padding: 15px;
+        width:250px;
+    }
+    .box_1{
+        display: inline-block;
+    }
+    .logo_sec1{
+        display: inline-block;
+        float:right;
+        margin-top: 10px;
+    }
+    .logo-size1{
+        width:28px;
+    }
+    .boxlabel1{
+        font-size: 13px;
+        color: #fff;
+    }
+    .boxlabel2{
+        font-size: 22px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .btm_box{
+        margin-top: 5px;
+        margin-bottom:20px;
+    }
+    .trend_style{           
+        font-size: 10px;
+        color: #2a3f54;
+        cursor: pointer;
+        font-weight: 700;
+        padding: 8px 8px 8px 8px;
+        border-radius: 5px;   
+        border:2px solid #2a3f54;
+    }
+    .perc_style{
+        position: relative;
+        text-align: center;
+        bottom: 128px;
+        font-weight: normal;
+        font-size: 20px;
+        color:#000;
+    }
+   
+     /***************************************
+    table style
+    ***************************************/
+    .table_wrap{
+        background-color: #fff; 
+        margin: 20px;
+        padding: 20px;
+    }
+   
+   
+    table th {
+    
+      color: #2a3f54;
+      font-weight:bold;
+
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;     
+        font-size: 12px;
+    }
+    .icon_table{
+        width:24px;
+        cursor: pointer;
+    }
+  
+
+      /***************************************
+    modal
+    ***************************************/
+    
+    .modal-header {
+        padding: 5px;
+        border-bottom: none;
+        background-color: #2a3f54;
+        color: #fff;
+    }
+    .modal-content{
+        border-radius: 0px;
+        border:none;
+    }
+    .modal-dialog{
+        width:70%;
+    }
+    .close{
+        color: #fff;
+        opacity: .9;
+    }
+    .close:focus, .close:hover{
+        color: #fff;
+        opacity: .9; 
+    }
+    
+    .panel-default>.panel-heading {
+        color:#000;
+        background-color: #fff;
+        border-color: #ddd;        
+    }
+    .panel-title{
+        font-weight: bold;
+    }
+    .filter_sz{
+        width: 14px;
+    }
+    .filter_wrap{
+        position: relative;
+        float: right;
+       
+    }
+    .panel-body{
+        padding-top: 0px;
+    }
+    .tstcasewrap{
+        color:#2a3f54;
+        padding:10px;
+        border-bottom:1px solid #f4f4f4;
+    }
+
+
+  
+   
+
+    .panel-heading .accordion-toggle:after {
+        /* symbol for "opening" panels */
+        font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+        content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+        float: right;        /* adjust as needed */
+        color: #4e4e4e;  
+        font-weight: normal; 
+        font-size: 14px;      /* adjust as needed */
+    }
+    .panel-heading .accordion-toggle.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    }
+
+    table.dataTable thead th, table.dataTable tfoot th {
+        font-weight: bold !important;
+    }
+
+    .dataTables_filter{
+        margin-right: 25px;
+    }
+    .imgpopupsz{
+        max-width: 350px;
+		border: 0.6pt solid #EDEFEF;
+    }

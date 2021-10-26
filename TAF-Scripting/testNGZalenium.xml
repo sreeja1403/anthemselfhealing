@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+	<listeners>
+		<listener class-name="com.scripted.reporting.AllureListener"></listener>
+	</listeners>
+	
+	<test name="ZaleniumParallelTest">
+		<classes>
+			<class name="com.scripted.testscripts.TC001ZaleniumParallel" />
+			<class name="com.scripted.testscripts.TC001ZaleniumParallel1" />
+		</classes>
+	</test>
+</suite>

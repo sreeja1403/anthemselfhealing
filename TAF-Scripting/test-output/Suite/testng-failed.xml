@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="classes" name="testmob(failed)">
+    <classes>
+      <class name="com.scripted.selfHealingTests.CompleteTest_Self_Healing">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="aftermethod"/>
+          <include name="TC005_TimeoutCheck"/>
+          <include name="teardown"/>
+          <include name="afterTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.scripted.selfHealingTests.CompleteTest_Self_Healing -->
+    </classes>
+  </test> <!-- testmob(failed) -->
+</suite> <!-- Failed suite [Suite] -->

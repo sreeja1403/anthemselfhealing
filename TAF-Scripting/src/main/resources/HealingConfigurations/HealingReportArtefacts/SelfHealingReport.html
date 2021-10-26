@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Self Healing Report</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/SH_style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/Chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo_sec">
+                <img src="img/sklogo.png" class="logo-size" alt="logo-skrptmate" />
+            </div>
+            <div class="text_sec">
+                <div class="heading1">Healing Test Report</div>
+                <div class="heading2"><span>Executed By: </span><span>{ExecutedBy}</span></div>
+                <div class="heading2"><span>Execution Time: </span><span>{ExecutedOn}</span></div>
+            </div>
+        </div>
+        <div class="row section_1">
+
+            <div class="col-md-6 col-lg-6 martp_style">
+                <div style="margin-top:20px;">
+                    <div class="box_style1">
+                        <div class="box_1">
+                            <div class="boxlabel1">NoSuchElement</div>
+                            <div class="boxlabel2">{NoSuchElement}</div>
+                        </div>
+                        <div class="logo_sec1">
+                            <img src="img/noelement.png" class="logo-size1" alt="NoSuchElement" />
+                        </div>
+                    </div>
+
+                    <div class="box_style2">
+                        <div class="box_1">
+                            <div class="boxlabel1">Stale/Timeout</div>
+                            <div class="boxlabel2">{stale}</div>
+                        </div>
+                        <div class="logo_sec1">
+                            <img src="img/timeout.png" class="logo-size1" alt="Stale/Timeout" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btm_box">
+                    <div class="box_style3">
+                        <div class="box_1">
+                            <div class="boxlabel1">Network Failures</div>
+                            <div class="boxlabel2">{Network}</div>
+                        </div>
+                        <div class="logo_sec1">
+                            <img src="img/networkfailures.png" class="logo-size1" alt="Network Failures" />
+                        </div>
+                    </div>
+
+                    <div class="box_style4">
+                        <div class="box_1">
+                            <div class="boxlabel1">Others</div>
+                            <div class="boxlabel2">{Others}</div>
+                        </div>
+                        <div class="logo_sec1">
+                            <img src="img/others.png" class="logo-size1" alt="Others" />
+                        </div>
+                    </div>
+                </div>
+
+                <span class="trend_style" data-toggle="modal" data-target="#myModal2">
+                    Last {countOfExecution} Execution Trend
+                    <img src="img/graphicon2.png" class="graphicon" alt="graph icon" />
+                </span>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+                <div style="display: block;">
+                    <canvas id="myChart">
+                    </canvas>
+                    <div class="perc_style">{percentage}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table_wrap">
+            <div>
+                <span class="legend1"><img src="img/bandage.png" class="logo-table" alt="Healed with Recommendations" />Healed with Recommendations</span>
+                <span class="legend2"><img src="img/Failed.png" class="logo-table1" alt="Attempted to Heal" />Attempted to Heal</span>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default" id="webPanel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title" style="color:#2a3f54;">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                Web
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                     <!--        <div style="margin-top:15px;visibility:hidden;">
+                                <label style="font-weight:normal; font-size: 12px;"></label>
+                                <div class="filter_wrap">
+                                    <label style="font-weight:normal; font-size: 12px;">Filter</label>
+                                    <select id="web_filter">
+                                        <option value="10">Select</option>
+                                    </select>
+                                    <a id="web_filter_clear"><img src="img/clear_filter.png" class="filter_sz" alt="Clear filter" /></a>
+                                </div>
+                            </div> -->
+                            {Webtbody}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="mobPanel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title" style="color:#2a3f54;">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                Mobile
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+<!--                             <div style="margin-top:15px;visibility:hidden;">
+                                <label style="font-weight:normal; font-size: 12px;"></label>
+                                <div class="filter_wrap">
+                                    <label style="font-weight:normal; font-size: 12px;">Filter</label>
+                                    <select id="mob_filter">
+                                        <option value="10">Select</option>
+                                    </select>
+                                    <a id="mob_filter_clear"><img src="img/clear_filter.png" class="filter_sz" alt="Clear filter" /></a>
+                                </div>
+                            </div> -->
+                            {Mobtbody}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {model}
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title">Last {countOfExecution} Execution Trend</h5>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <canvas id="line-chart"></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+
+<script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ["Success", "Failure",],
+            datasets: [{
+                backgroundColor: [
+                    "#97cc64",
+                    "#fd5a3e"
+                ],
+                data: [{Success}, {failed}]
+            }]
+        },
+        options: {
+            cutoutPercentage: 50
+        }
+    });
+
+    new Chart(document.getElementById("line-chart"), {
+        type: 'line',
+        data: {
+            labels: ["Run1", "Run2", "Run3", "Run4", "Run5"],
+            datasets: [{
+                data: {gNoSuchElement},
+                label: "NoSuchElement",
+                backgroundColor: '#3e95cd',
+                borderColor: "#3e95cd",
+                fill: false
+            }, {
+                data: {gStaleReference},
+                label: "Stale/TimeOut",
+                backgroundColor: '#8e5ea2',
+                borderColor: "#8e5ea2",
+                fill: false
+            }, {
+                data: {gConnectivity},
+                label: "Network Failures",
+                backgroundColor: '#3cba9f',
+                borderColor: "#3cba9f",
+                fill: false
+            }, {
+                data: {gOthers},
+                label: "Others",
+                backgroundColor: '#e8c3b9',
+                borderColor: "#e8c3b9",
+                fill: false
+            }
+            ]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Healing Trend (per run)',
+                fontSize: 16,
+            },
+            legend: {
+                labels: {
+                    boxWidth: 20,
+                    padding: 10
+                }
+            },
+            scales: {
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Count'
+                    }
+                }],
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Last {countOfExecution} Executions',
+                        fontStyle: 'bold',
+                    }
+
+                }]
+            }
+        }
+    });
+
+
+
+
+
+    //web
+
+    $("#web [data=errorMessage]").each(function (index) {
+        optionValue = $(this).text();
+        var exists = $("#web_filter option")
+            .filter(function (i, o) { return o.value === optionValue; })
+            .length > 0;
+        if (!exists) {
+            $("#web_filter").append(`<option value="${optionValue}">${optionValue}</option>`);
+        }
+    });
+    
+    $(document).ready(function () {
+        if ($('#collapseOne div .list').length == 0) {
+            $('#accordion .panel:eq(0)').hide();
+            $('a:contains("Mobile")').trigger("click");
+        }
+
+        if ($('#collapseTwo div .list').length == 0) {
+            $('#accordion .panel:eq(1)').hide();
+        }
+    });
+
+
+</script>
+</html>

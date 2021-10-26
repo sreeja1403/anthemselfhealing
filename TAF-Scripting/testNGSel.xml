@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+	<!-- <test name="APITest"> <classes> <class name="com.scripted.runners.APITestNGRunner" 
+		/> </classes> </test> <test name="WebTest"> <classes> <class name="com.scripted.runners.WebTestNGRunner" 
+		/> </classes> </test> -->
+	<!-- <test name="MobileTest"> <classes> <class name="com.scripted.runners.MobileTestRunner" 
+		/> </classes> </test> -->
+
+
+	<!-- <test name="OperaTest"> <parameter name="browser" value="opera" /> 
+		<parameter name="version" value="60.0" /> <classes> <class name="com.scripted.testscripts.TC001AddAndDeleteContactCB" 
+		/> </classes> </test> -->
+	<test name="SelenoidParallelTest">
+		<!-- <parameter name="browser" value="firefox" /> <parameter name="version" 
+			value="68.0" /> -->
+		<classes>
+			<class name="com.scripted.testscripts.TC001SelenoidParallel" />
+			<class name="com.scripted.testscripts.TC001SelenoidParallel2" />
+		</classes>
+	</test>
+	<!-- <test name="Chrome75Test"> <parameter name="browser" value="chrome" 
+		/> <parameter name="version" value="76.0" /> <classes> <class name="com.scripted.testscripts.TC001AddAndDeleteContactCB3" 
+		/> </classes> </test> -->
+	<!-- <test name="ChromeTest"> <parameter name="browser" value="chrome" /> 
+		<parameter name="version" value="76.0" /> <classes> <class name="com.scripted.testscripts.SelenoidTrial" 
+		/> </classes> </test> -->
+	<!-- <test name="BDDChromeTest"> <parameter name="browser" value="chrome" 
+		/> <parameter name="version" value="76.0" /> <classes> <class name="com.scripted.runners.WebTestNGRunner" 
+		/> </classes> </test> -->
+</suite>

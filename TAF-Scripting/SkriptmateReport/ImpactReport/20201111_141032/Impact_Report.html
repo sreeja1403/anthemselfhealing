@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Analyzer Report</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="css/IA_style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo_sec">
+        <img src="img/sklogo.png" class="logo-size" alt="logo-skrptmate"/>
+      </div>
+      <div class="text_sec">
+        <div class="heading1">Impact Analyzer Report</div>
+        <div class="heading2"><span>Executed By:</span><span>U38119</span></div>
+        <div class="heading2"><span>Execution Time:</span><span>11/11/2020 02.12.39 PM</span></div>
+      </div>
+    </div>
+
+    <div class="row section_1"> 
+      <div>
+        <canvas id="mixed-chart" height="100px"></canvas>
+      </div>
+ 
+    </div>
+<div class="table_wrap">
+      <div class="panel-group" id="accordion">
+<div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+   
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse0">
+APSignInpage              </a>
+              &nbsp;
+              <span class="noti_style">1</span>
+            
+            </h4>
+          </div>
+          <div id="collapse0" class="panel-collapse collapse ">
+            <div class="panel-body">
+              <table style="width:100%";>
+                <thead>
+                    <tr>
+                        <th>Failed Object</th>
+                        <th>Failed Locator</th>
+                        <th>Updated Locator</th>
+                        <th>Test Cases Impacted</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>      <tr>
+                    <td>input_email</td>
+                    <td>name : emaill</td>
+                    <td> id : email</td>
+                    <td><b>1</b></td>
+                    <td><a class="hyper" data-toggle="modal" data-target="#myModal00">view</a></td>
+                </tr>   </table>
+            </div>
+          </div>
+        </div> 
+</div>
+
+        </div>
+<!-- Modal1-->
+       <div class="modal fade" id="myModal00" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h5 class="modal-title">Test Cases</h5>
+            </div>
+            <div class="modal-body">
+              <table style="width:100%";><tr>
+                    <td>TC001_AutomationpracticeValidation</td>   
+                </tr></table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+   </div>
+</body>
+
+<script src="js/Chart.js"></script>
+
+
+<script>
+  new Chart(document.getElementById("mixed-chart"), {
+      type: 'bar',
+      data: {
+labels: ["APSignInpage"],
+        datasets: [
+          {
+            label: "Number of TestCase",
+            data: [1,],
+  backgroundColor: [
+
+                'rgba(3, 169, 244, 0.8)',
+                'rgba(0, 188, 212, 0.8)',
+                'rgba(0, 150, 136, 0.8)',
+                'rgba(76, 175, 80, 0.8)',
+                'rgba(139, 195, 74, 0.8)',
+                
+            ],
+            borderColor: [
+              
+                'rgba(3, 169, 244, 1)',
+                'rgba(0, 188, 212, 1)',
+                'rgba(0, 150, 136, 1)',
+                'rgba(76, 175, 80, 1)',
+                'rgba(139, 195, 74, 1)',
+               
+            ],
+            borderWidth: .5,
+            
+           
+          }
+        ]
+      },
+      options: {
+        title: {
+        display: true,
+        text: 'High Impacted Test Cases',
+        fontSize: 14,
+        fontColor: '#2a3f54'
+  },
+  legend: {
+   display:false
+        },
+  scales: {
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: 'Test Cases Impacted',
+      },
+      ticks: {
+        stepSize:
+1
+  ,
+        min: 0,
+            }
+    }],
+  }  
+       
+      }
+  });
+  
+  </script>
+
+
+
+</html>

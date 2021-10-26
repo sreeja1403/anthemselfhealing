@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Analyzer Report</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="css/IA_style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo_sec">
+        <img src="img/sklogo.png" class="logo-size" alt="logo-skrptmate"/>
+      </div>
+      <div class="text_sec">
+        <div class="heading1">Impact Analyzer Report</div>
+        <div class="heading2"><span>Executed By:</span><span>U38119</span></div>
+        <div class="heading2"><span>Execution Time:</span><span>11/11/2020 02.18.16 PM</span></div>
+      </div>
+    </div>
+
+    <div class="row section_1"> 
+      <div>
+        <canvas id="mixed-chart" height="100px"></canvas>
+      </div>
+ 
+    </div>
+<div class="table_wrap">
+      <div class="panel-group" id="accordion">
+<div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+   
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse0">
+MyAppPage              </a>
+              &nbsp;
+              <span class="noti_style">3</span>
+            
+            </h4>
+          </div>
+          <div id="collapse0" class="panel-collapse collapse ">
+            <div class="panel-body">
+              <table style="width:100%";>
+                <thead>
+                    <tr>
+                        <th>Failed Object</th>
+                        <th>Failed Locator</th>
+                        <th>Updated Locator</th>
+                        <th>Test Cases Impacted</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>      <tr>
+                    <td>input_radioBtn1</td>
+                    <td>name : radio11</td>
+                    <td> xpath : //div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]</td>
+                    <td><b>3</b></td>
+                    <td><a class="hyper" data-toggle="modal" data-target="#myModal00">view</a></td>
+                </tr>   </table>
+            </div>
+          </div>
+        </div> <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+   
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+APSignInpage              </a>
+              &nbsp;
+              <span class="noti_style">3</span>
+            
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse ">
+            <div class="panel-body">
+              <table style="width:100%";>
+                <thead>
+                    <tr>
+                        <th>Failed Object</th>
+                        <th>Failed Locator</th>
+                        <th>Updated Locator</th>
+                        <th>Test Cases Impacted</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>      <tr>
+                    <td>input_email</td>
+                    <td>name : emaill</td>
+                    <td> id : email</td>
+                    <td><b>3</b></td>
+                    <td><a class="hyper" data-toggle="modal" data-target="#myModal01">view</a></td>
+                </tr>   </table>
+            </div>
+          </div>
+        </div> <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+   
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+OrangeHRMPage              </a>
+              &nbsp;
+              <span class="noti_style">3</span>
+            
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse ">
+            <div class="panel-body">
+              <table style="width:100%";>
+                <thead>
+                    <tr>
+                        <th>Failed Object</th>
+                        <th>Failed Locator</th>
+                        <th>Updated Locator</th>
+                        <th>Test Cases Impacted</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>      <tr>
+                    <td>b_admintab</td>
+                    <td>name : admin</td>
+                    <td> xpath : //a[@id='menu_admin_viewAdminModule']/b[1]</td>
+                    <td><b>3</b></td>
+                    <td><a class="hyper" data-toggle="modal" data-target="#myModal02">view</a></td>
+                </tr>   </table>
+            </div>
+          </div>
+        </div> 
+</div>
+
+        </div>
+<!-- Modal1-->
+       <div class="modal fade" id="myModal00" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h5 class="modal-title">Test Cases</h5>
+            </div>
+            <div class="modal-body">
+              <table style="width:100%";><tr>
+                    <td>TC-01-Radio button check in MyApp</td>   
+                </tr><tr>
+                    <td>TC-02-MyApp  application</td>   
+                </tr><tr>
+                    <td>TC-03-Self MyApp validation</td>   
+                </tr></table>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal1-->
+       <div class="modal fade" id="myModal01" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h5 class="modal-title">Test Cases</h5>
+            </div>
+            <div class="modal-body">
+              <table style="width:100%";><tr>
+                    <td>TC-01-Validating personal information in Automation practice</td>   
+                </tr><tr>
+                    <td>TC-02-Automation practice user validation</td>   
+                </tr><tr>
+                    <td>TC-03-AP Validation</td>   
+                </tr></table>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal1-->
+       <div class="modal fade" id="myModal02" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h5 class="modal-title">Test Cases</h5>
+            </div>
+            <div class="modal-body">
+              <table style="width:100%";><tr>
+                    <td>TC-01-User validation in OrangeHRM web application</td>   
+                </tr><tr>
+                    <td>TC-02-User check in OrangeHRM application</td>   
+                </tr><tr>
+                    <td>TC-03-OrangeHRM web application validation</td>   
+                </tr></table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+   </div>
+</body>
+
+<script src="js/Chart.js"></script>
+
+
+<script>
+  new Chart(document.getElementById("mixed-chart"), {
+      type: 'bar',
+      data: {
+labels: ["MyAppPage", "OrangeHRMPage", "APSignInpage"],
+        datasets: [
+          {
+            label: "Number of TestCase",
+            data: [3,3,3,],
+  backgroundColor: [
+
+                'rgba(3, 169, 244, 0.8)',
+                'rgba(0, 188, 212, 0.8)',
+                'rgba(0, 150, 136, 0.8)',
+                'rgba(76, 175, 80, 0.8)',
+                'rgba(139, 195, 74, 0.8)',
+                
+            ],
+            borderColor: [
+              
+                'rgba(3, 169, 244, 1)',
+                'rgba(0, 188, 212, 1)',
+                'rgba(0, 150, 136, 1)',
+                'rgba(76, 175, 80, 1)',
+                'rgba(139, 195, 74, 1)',
+               
+            ],
+            borderWidth: .5,
+            
+           
+          }
+        ]
+      },
+      options: {
+        title: {
+        display: true,
+        text: 'High Impacted Test Cases',
+        fontSize: 14,
+        fontColor: '#2a3f54'
+  },
+  legend: {
+   display:false
+        },
+  scales: {
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: 'Test Cases Impacted',
+      },
+      ticks: {
+        stepSize:
+1
+  ,
+        min: 0,
+            }
+    }],
+  }  
+       
+      }
+  });
+  
+  </script>
+
+
+
+</html>

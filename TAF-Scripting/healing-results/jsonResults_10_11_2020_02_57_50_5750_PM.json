@@ -1,0 +1,100 @@
+{
+  "testCase" : [ {
+    "testStep" : [ {
+      "technology" : "mobile",
+      "scrnShotPath" : "java.lang.ThreadLocal@59712875_10_11_2020_02_53_37_5337_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: emaill",
+      "action" : "enterText",
+      "locatorEleMap" : {
+        "xpath_Follows" : "//label[@for='email']/following-sibling::input[1]",
+        "xpath_fullXPath" : "html/body/div[1]/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input",
+        "xpath_Parent" : "(//div[@class='form-group']//input)[2]"
+      },
+      "pageName" : "Mobile_APSignInpage",
+      "failedElement" : "id :  emaill",
+      "healedElement" : "xpath : //label[@for='email']/following-sibling::input[1]",
+      "objectName" : "input_login",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    }, {
+      "technology" : "mobile",
+      "scrnShotPath" : null,
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: passswd",
+      "action" : "enterText",
+      "locatorEleMap" : { },
+      "pageName" : "Mobile_APSignInpage",
+      "failedElement" : "id :  passswd",
+      "healedElement" : "null : NA",
+      "objectName" : "password",
+      "healStatus" : "Failure",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "AndroidWebValidation"
+  }, {
+    "testStep" : [ {
+      "technology" : "web",
+      "scrnShotPath" : "_10_11_2020_02_55_03_553_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='emaill']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 2505c2b2a3ac64f8ed85012dd9c2c648\n*** Element info: {Using=name, value=emaill}",
+      "action" : "enterText",
+      "locatorEleMap" : {
+        "xpath_Follows" : "//label[@for='email']/following-sibling::input[1]",
+        "xpath_Ancestor" : "//form[@id='login_form']/div[1]/div[1]/input[1]/ancestor::*/input[@class= 'is_required validate account_input form-control']",
+        "css" : "input#email",
+        "xpath_fullXPath" : "/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]",
+        "xpath_Descendant" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/descendant::input[@class= 'is_required validate account_input form-control']",
+        "xpath_Parent" : "(//div[@class='form-group']//input)[2]",
+        "id" : "email",
+        "xpath_default" : "//form[@id='login_form']/div[1]/div[1]/input[1]",
+        "xpath_child" : "//form[@id='login_form']/div[1]/div[1]/input[1]/parent::*/child::input[@class= 'is_required validate account_input form-control']"
+      },
+      "pageName" : "APSignInpage",
+      "failedElement" : "name : emaill",
+      "healedElement" : "id : email",
+      "objectName" : "input_email",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    }, {
+      "technology" : "web",
+      "scrnShotPath" : null,
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='framelink']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7ae5e0fc5b02466bc7f64bc072952768\n*** Element info: {Using=name, value=framelink}",
+      "action" : "click",
+      "locatorEleMap" : {
+        "iframe" : "courses-iframe"
+      },
+      "pageName" : "MyAppPage",
+      "failedElement" : "name : framelink",
+      "healedElement" : "null : NA",
+      "objectName" : "a_linkFrameContact",
+      "healStatus" : "Failure",
+      "testStepFailureReason" : "NoSuchElementException-iframeswitch"
+    }, {
+      "technology" : "web",
+      "scrnShotPath" : "_10_11_2020_02_57_47_5747_PM",
+      "excptnMsg" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name='radio11']\"}\n  (Session info: chrome=86.0.4240.183)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'F049LTRV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\u38119\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54558}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 8dd3ab51ff6998b97fcea3b3aaf8065b\n*** Element info: {Using=name, value=radio11}",
+      "action" : "click",
+      "locatorEleMap" : {
+        "xpath_Ancestor" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/ancestor::*/input[@value= 'radio1']",
+        "css" : "div[id = \"radio-btn-example\"] > fieldset > label > input",
+        "xpath_Attribute" : "//input[@value='radio1']",
+        "xpath_fullXPath" : "html/body/div[1]/div[1]/fieldset/label[1]/input",
+        "xpath_Descendant" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/parent::*/descendant::input[@value= 'radio1']",
+        "xpath_Parent" : "(//div[@class='left-align']//input)[1]",
+        "xpath_Position" : "//input[position() and @value='radio1']",
+        "xpath_default" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]",
+        "xpath_child" : "//div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]/parent::*/child::input[@value= 'radio1']"
+      },
+      "pageName" : "MyAppPage",
+      "failedElement" : "name : radio11",
+      "healedElement" : "xpath : //div[@id='radio-btn-example']/fieldset[1]/label[1]/input[1]",
+      "objectName" : "input_radioBtn1",
+      "healStatus" : "success",
+      "testStepFailureReason" : "NoSuchElementException"
+    } ],
+    "testCaseName" : "RemoteTestNG"
+  } ],
+  "noSuchEleCount" : 5,
+  "stleTmeOutCount" : 0,
+  "netwrkErrCount" : 0,
+  "othersCount" : 0,
+  "testRunName" : "TestRun1"
+}

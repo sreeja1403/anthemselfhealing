@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Analyzer Report</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="css/IA_style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo_sec">
+        <img src="img/sklogo.png" class="logo-size" alt="logo-skrptmate"/>
+      </div>
+      <div class="text_sec">
+        <div class="heading1">Impact Analyzer Report</div>
+        <div class="heading2"><span>Executed By:</span><span>U38119</span></div>
+        <div class="heading2"><span>Execution Time:</span><span>10/11/2020 01.24.45 PM</span></div>
+      </div>
+    </div>
+
+    <div class="row section_1"> 
+      <div>
+        <canvas id="mixed-chart" height="100px"></canvas>
+      </div>
+ 
+    </div>
+<div class="table_wrap">
+      <div class="panel-group" id="accordion">
+
+</div>
+
+        </div>
+
+
+   </div>
+</body>
+
+<script src="js/Chart.js"></script>
+
+
+<script>
+  new Chart(document.getElementById("mixed-chart"), {
+      type: 'bar',
+      data: {
+labels: [""],
+        datasets: [
+          {
+            label: "Number of TestCase",
+            data: [],
+  backgroundColor: [
+
+                'rgba(3, 169, 244, 0.8)',
+                'rgba(0, 188, 212, 0.8)',
+                'rgba(0, 150, 136, 0.8)',
+                'rgba(76, 175, 80, 0.8)',
+                'rgba(139, 195, 74, 0.8)',
+                
+            ],
+            borderColor: [
+              
+                'rgba(3, 169, 244, 1)',
+                'rgba(0, 188, 212, 1)',
+                'rgba(0, 150, 136, 1)',
+                'rgba(76, 175, 80, 1)',
+                'rgba(139, 195, 74, 1)',
+               
+            ],
+            borderWidth: .5,
+            
+           
+          }
+        ]
+      },
+      options: {
+        title: {
+        display: true,
+        text: 'High Impacted Test Cases',
+        fontSize: 14,
+        fontColor: '#2a3f54'
+  },
+  legend: {
+   display:false
+        },
+  scales: {
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: 'Test Cases Impacted',
+      },
+      ticks: {
+        stepSize:
+1
+  ,
+        min: 0,
+            }
+    }],
+  }  
+       
+      }
+  });
+  
+  </script>
+
+
+
+</html>
